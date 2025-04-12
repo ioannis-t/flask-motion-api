@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route("/api/motion", methods=["GET"])
+@app.route("/api/v1", methods=["GET"])
 def motion_handler():
     action = request.args.get("action")
 
